@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SRWebSocket.h"
 
-@interface ViewController : UIViewController
+@import Foundation;
 
+@interface ViewController : UIViewController <SRWebSocketDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
